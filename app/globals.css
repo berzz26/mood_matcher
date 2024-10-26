@@ -19,3 +19,21 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.tooltip {
+  position: absolute;
+  background-color: #333;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  white-space: nowrap;
+  transform: translate(-50%, -100%);
+  opacity: 0;
+  
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.relative:hover .tooltip {
+  opacity: 1;
+}
