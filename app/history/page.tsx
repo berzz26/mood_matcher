@@ -7,7 +7,7 @@ const moodHistory = [
   { mood: 'Focus', icon: Coffee, date: '2023-05-12', time: '11:00' },
 ]
 
-export default function History() {
+export default function History(): React.ReactElement {
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold text-gray-800 mb-4">Your Mood History</h1>
